@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Faces memo.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251"> 
+<script type="text/javascript" src="./jquery-1.5.min.js"></script>
+<script type="text/javascript" src="./jquery.json-2.2.min.js"></script>
+<script type="text/javascript" src="http://vkontakte.ru/js/api/xd_connection.js?2"></script> 
+<link rel="stylesheet" type="text/css" href="http://vkontakte.ru/css/al/common.css?107">
+<link rel="stylesheet" type="text/css" href="./memo.css"> 
+<script type="text/javascript" src="./memo.js" ></script>
+<script type="text/javascript">
+//for text
+//window.name = "fXD";
+      //$(document).ready(function() { memo.init(); } );
+$(document).ready( function() { 
+  VK.init(function() {
+    memo.init();
+  });  
+});
+</script>
+</head>
+<body style="background-color: #F7F7F7;">
+<div id="debug"></div>
+<div id="memoboard">
+
+</div>
+
+<div class="memosidebar">
+<div id="dashboard" style="display: none;">
+Счёт: <span id="scoreboard">0</span><br>
+<!-- Прогресс: <span id="progressboard">0%</span><br> -->
+<div id="achievement" style="display: none;">Рекорд: <span id="achievementval"></span></div><br>
+</div>
+<div id="initjs">
+Инициализация JavaScript...
+</div>
+<div id="loading" style="display: none;">
+Загрузка изображений... <span id="loadprogress"></span><br>
+Подождите немного.<br>
+</div>
+<div id="newgame" class="button_blue">
+  <button id="bstart" type="button" onclick="memo.start();">Начать игру</button>
+  <button id="brestart" type="button" style="display:none;" onclick="memo.start();">Начать заново</button>  
+</div>
+
+</div>
+<div id="friendlist">
+</div>
+</body>
+</html>

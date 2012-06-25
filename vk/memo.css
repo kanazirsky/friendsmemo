@@ -1,0 +1,63 @@
+html * {
+    margin: 0;
+    /*height: 100%;*/
+    /*padding: 0; SELECT NOT DISPLAYED CORRECTLY IN FIREFOX */
+}
+body {
+  width: 607px;  
+}
+
+#memoboard {
+  float: left;
+  margin: 0px; 
+/*  width: 336px; */
+  width: 416px;
+  clear: right;  
+/*  border: 1px solid #DBE0EA; */
+}
+#memoboard div { 
+  width: 50px; 
+  height: 50px; 
+/*  border: 2px solid #222; */
+  border: 1px solid #DBE0EA;
+  margin: 0px; 
+  padding: 0; 
+  float: left;
+  background: url(http://vkontakte.ru/images/question_c.gif) no-repeat; float: left;  
+}
+
+#newgame {
+  margin: 10px 0px;
+  width: 120px; 
+  font: 12px verdana, arial, helvetica, sans-serif;
+  /* background: url(http://vkontakte.ru/images/question_c.gif) no-repeat; float: left;  */
+}
+#newgame button {
+  width: 100%;
+}
+
+
+.memosidebar {
+  width: 160px;
+  margin: 0px; 
+  padding: 6px 10px;
+  background-color: white;
+  font: 18px verdana, arial, helvetica, sans-serif;
+  border: 1px solid #DBE0EA;
+  float: right; 
+  clear: none;
+/*  position: absolute; */
+  right: 0;
+}
+
+#friendlist {
+  width: 160px;
+  margin: 0px; 
+  padding: 6px 10px;
+
+  float: right; 
+  clear: right;
+
+  right: 0;
+
+}
