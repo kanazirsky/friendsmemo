@@ -1,0 +1,4 @@
+friendsmemo
+===========
+
+Social memory game
